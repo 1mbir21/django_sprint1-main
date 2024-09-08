@@ -47,7 +47,7 @@ posts: list[dict[str, Union[int, str]]] = [
     },
 ]
 
-main_posts = {post['id']: post for post in posts}
+posts_by_id = {post['id']: post for post in posts}
 
 
 def index(request):
